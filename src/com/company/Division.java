@@ -3,9 +3,8 @@ package com.company;
 import java.io.IOException;
 
 public class Division {
-    int a,b;
 
-    public double division1(int a, int b){
+      public double division1(int a, int b){
         return a/b;
     }
 
@@ -21,7 +20,7 @@ public class Division {
 
     public double division3(int a, int b) throws IOException{
         try{
-            return (a / b;
+            return a / b;
         } catch (ArithmeticException e) {
             throw new IOException();
         }

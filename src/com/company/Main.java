@@ -14,15 +14,20 @@ public class Main {
         System.out.println(div2.division2(a,b));
     }
 
-    public  static void exercice3(int a, int b) throws IOException{
+    public  static void exercice3(int a, int b){
         Division div3 = new Division();
-        System.out.println(div3.division3(a,b));
+        try{
+            double resultat = div3.division3(a,b);
+            System.out.println(resultat);
+        } catch (IOException e){
+            System.out.println("non divisible par 0");
+        }
     }
 
 
     public static void main(String[] args){
-        exercice1(10,0);
-        exercice2(10,0);
+        //  exercice1(10,0);
+        //  exercice2(10,0);
         exercice3(10,0);
     }
 }
